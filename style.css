@@ -275,7 +275,6 @@ display: none;
   header {
     width: 100%;
     max-width: 90%;
-    
     color: #344563;
   }
 
@@ -284,7 +283,6 @@ display: none;
     flex-direction: row;
     padding: 2% 8%;
     gap: 5%;
-  
     margin: 24px;
   }
 
@@ -306,14 +304,13 @@ display: none;
   .swap-class {
     order: 4;
   }
+
 h1 {
  justify-content: end;
- 
 }
  
 p {
   width: 60%;
-
  }
 
  .connect {
@@ -326,8 +323,6 @@ p {
 #fs-frm {
 max-width: 45%;
 margin: 0 auto;
-
-
 }
 
 .header-img {
