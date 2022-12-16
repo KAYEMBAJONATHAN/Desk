@@ -16,7 +16,6 @@ header {
   padding: 0 3%;
 }
 
-
 .logo {
   display: flex;
   align-self: flex-end;
@@ -146,7 +145,6 @@ li {
   background-size: contain;
   padding-top: 20%;
   background-color: #6070ff;
- 
 }
 
 .index {
@@ -245,31 +243,29 @@ li {
 }
 
 .desk {
-display: none;
+  display: none;
 }
 
 @media(min-width:768px) {
   
 .headline {
-    background: url("./assets/Header\ bg\ \(1\).png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    background-position: center;
-    padding-top: 20px;
-    background-color: #fff;
-    padding: 24px;
-    
+  background: url("./assets/Header\ bg\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  background-position: center;
+  background-color: #fff;
+  padding: 24px 80px;
   }
 
   .desk {
-    display: flex;
-    justify-content: space-between;
-    min-width: 25%;
-    text-decoration: none;
-    padding-right: 100px;
-    padding-top: 0;
-    margin: 0;
+   display: flex;
+   justify-content: space-between;
+   min-width: 25%;
+   text-decoration: none;
+   padding-right: 100px;
+   padding-top: 0;
+   margin: 0;
   }
 
   header {
@@ -302,27 +298,23 @@ display: none;
   }
 
   .swap-class {
-    order: 4;
+    order: 1;
   }
 
-h1 {
- justify-content: end;
-}
- 
 p {
-  width: 60%;
+   width: 80%;
  }
 
  .connect {
-  width: 60%;
-  color: #7f8cff;
-  margin-bottom: 0;
-  text-decoration: none;
+   width: 60%;
+   color: #7f8cff;
+   margin-bottom: 0;
+   text-decoration: none;
 }
 
 #fs-frm {
-max-width: 45%;
-margin: 0 auto;
+  max-width: 45%;
+  margin: 0 auto;
 }
 
 .header-img {
@@ -344,6 +336,36 @@ margin: 0 auto;
 
 .field-spacing {
   text-align: left;
+}
+
+#about {
+  display: flex;
+  gap: 20px;
+  color: #344563;
+}
+
+.portfolio-about {
+  max-width: 45%;
+  border-radius: 0% 70px 0% 0%;
+}
+
+.language-layout {
+ flex-direction: row;
+}
+
+.language-content {
+  flex-direction: column;
+  margin: 0 3%;
+  padding-right: 12%;
+  align-items: baseline;
+}
+
+.languages {
+  width: 45%;
+}
+
+.languages > ul > li > h1 {
+  margin-bottom: 5px;
 }
 
 }
