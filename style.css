@@ -258,14 +258,14 @@ li {
 }
 
 .desk {
-   display: flex;
-   justify-content: space-between;
-   min-width: 25%;
-   text-decoration: none;
-   padding-right: 100px;
-   padding-top: 0;
-   margin: 0;
-}
+    display: flex;
+    justify-content: space-between;
+    min-width: 25%;
+    text-decoration: none;
+    padding-right: 100px;
+    padding-top: 0;
+    margin: 0;
+  }
 
 header {
    width: 100%;
