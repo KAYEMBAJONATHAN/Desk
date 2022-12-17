@@ -245,15 +245,15 @@ li {
     background: url("./assets/Header\ bg\ \(1\).png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    padding-top: 0;
     background-position: center;
     background-color: #fff;
     border-bottom-left-radius: 100px;
   }
 
   .headline .name {
-    padding-top: 200px;
     padding-left: 260px;
+    padding-top: 15%;
   }
 
   .headline p,
@@ -267,7 +267,6 @@ li {
     justify-content: space-between;
     min-width: 25%;
     text-decoration: none;
-    padding-right: 100px;
     padding-top: 0;
     margin: 0;
   }
@@ -310,10 +309,14 @@ li {
 
   .details > * {
     text-align: center;
+    list-style: disc;
+    margin: 0 7%;
   }
 
-  .swap-class {
-    order: 1;
+  .portfolio-work:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   #fs-frm {
@@ -325,13 +328,17 @@ li {
     text-align: center;
     border-top-left-radius: 120px;
     padding-top: 2%;
+    background: url("./assets/contact\ form\ background\ shapes.png");
     background-position: center;
+    background-color: #6070ff;
+    background-size: contain;
   }
 
   .text {
     width: 50%;
     padding: 2% 8%;
     margin-left: 15%;
+    font-size: larger;
   }
 
   .header-img > h1 {
@@ -373,7 +380,9 @@ li {
     border-top-right-radius: 100px;
     background-color: #fff;
     width: 100%;
-    padding-top: 50px;
+    background-position: center;
+    padding: 0 35px;
+    padding-top: 11%;
   }
 
   .languages > ul > li > h1 {
