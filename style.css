@@ -86,7 +86,6 @@ li {
 
 #portfolio {
   display: grid;
-  gap: 88px;
   background: #e5e5e5;
   justify-self: start;
 }
@@ -153,10 +152,7 @@ li {
 }
 
 .button {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
+  
   border-radius: 10px;
   text-align: center;
   color: #6070ff;
@@ -192,7 +188,6 @@ li {
 
 .field-spacing {
   padding: 10px 20px;
-  border-radius: 10px;
 }
 
 .language-layout {
@@ -254,7 +249,18 @@ li {
     height: 100vh;
     background-position: center;
     background-color: #fff;
-    padding: 24px 80px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .headline .name {
+    padding-top: 200px;
+    padding-left: 260px;
+  }
+
+  .headline p,
+  .headline .connect,
+  .headline .socials {
+    padding: 0 260px;
   }
 
   .desk {
@@ -265,12 +271,16 @@ li {
     padding-right: 100px;
     padding-top: 0;
     margin: 0;
+    
   }
 
   header {
     width: 100%;
     max-width: 90%;
     color: #344563;
+    padding-bottom: 50px;
+    letter-spacing: 0.37px;
+    border-top-right-radius: 120px;
   }
 
   .portfolio-work {
@@ -278,8 +288,16 @@ li {
     flex-direction: row;
     padding: 2% 8%;
     gap: 5%;
-    margin: 24px;
+    margin: 142px 142px 0 142px;
+    align-self: center;
+    padding-left: 25px;
+    width: 80%;
   }
+
+  .portfolio-work:last-child {
+    margin-bottom: 142px;
+  }
+  
 
   .desk > li > a {
     text-decoration: none;
@@ -301,12 +319,12 @@ li {
     order: 1;
   }
 
-  p {
-    width: 80%;
+
+  .name {
+    align-self: start;
   }
 
   .connect {
-    width: 60%;
     color: #7f8cff;
     margin-bottom: 0;
     text-decoration: none;
@@ -339,18 +357,24 @@ li {
   }
 
   #about {
-    display: flex;
-    gap: 20px;
-    color: #344563;
+    background-color: #e5e5e5;
   }
+
+  .about-wrapper {
+    display: flex;
+  }
+
 
   .portfolio-about {
     max-width: 45%;
-    border-radius: 0% 70px 0% 0%;
+    margin: 0;
+    border-radius: 0;
+    padding: 142px 0 142px 142px;
   }
 
   .language-layout {
     flex-direction: row;
+    width: 51%;
   }
 
   .language-content {
@@ -361,10 +385,21 @@ li {
   }
 
   .languages {
-    width: 45%;
+    border-top-right-radius: 100px;
+    background-color: #fff;
+    width: 100%;
+    padding-top: 50px;
   }
 
   .languages > ul > li > h1 {
     margin-bottom: 5px;
+  }
+
+  .project-item {
+    padding-left: 30px;
+  }
+  .about-h1 {
+    padding-top: 0;
+    margin-top: 0;
   }
 }

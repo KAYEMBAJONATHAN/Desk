@@ -22,7 +22,7 @@
 
 
 
-**Hello_Microverse**  all about my first web portf 
+**DESK** desktop version 
 
 ## 🛠 Built With HTML <a name="For Text"></a>
 
