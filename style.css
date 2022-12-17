@@ -139,7 +139,7 @@ li {
   display: flex;
   flex-direction: column;
   padding-left: 5%;
-  background-image: url("./assets/Background.svg");
+  background-image: url("./assets/Header\ bg\ \(1\).png");
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 20%;
@@ -152,7 +152,6 @@ li {
 }
 
 .button {
-  
   border-radius: 10px;
   text-align: center;
   color: #6070ff;
@@ -271,7 +270,6 @@ li {
     padding-right: 100px;
     padding-top: 0;
     margin: 0;
-    
   }
 
   header {
@@ -297,7 +295,6 @@ li {
   .portfolio-work:last-child {
     margin-bottom: 142px;
   }
-  
 
   .desk > li > a {
     text-decoration: none;
@@ -317,17 +314,6 @@ li {
 
   .swap-class {
     order: 1;
-  }
-
-
-  .name {
-    align-self: start;
-  }
-
-  .connect {
-    color: #7f8cff;
-    margin-bottom: 0;
-    text-decoration: none;
   }
 
   #fs-frm {
@@ -364,7 +350,6 @@ li {
     display: flex;
   }
 
-
   .portfolio-about {
     max-width: 45%;
     margin: 0;
@@ -398,6 +383,7 @@ li {
   .project-item {
     padding-left: 30px;
   }
+
   .about-h1 {
     padding-top: 0;
     margin-top: 0;
