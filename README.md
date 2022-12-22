@@ -52,7 +52,8 @@ HTML5 and CSS3 which are the latest versions were used in building this project.
 
 ## 🚀 Live Demo <a name="Live Demo"></a>
 
-- [Live Demo Link](https://kayembajonathan.github.io/Portfolio_Microverse/)
+- [Live Demo Link](https://kayembajonathan.github.io/Desk/
+)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -85,7 +86,7 @@ Clone this repository to your desired folder:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](git@github.com:KAYEMBAJONATHAN/Hello_Microverse.git)
+- GitHub: [@githubhandle](https://github.com/KAYEMBAJONATHAN)
 - Twitter: [@twitterhandle]()
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jonathan-kayemba-b56247236/)
 
