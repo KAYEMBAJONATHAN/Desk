@@ -6,39 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
+   
     <title>Jonathan's Portfolio</title>
 </head>
     <body>
-        <div class="intro-card">
+          </div>
             <header>
                 <div class="nav-container">
                     <div class="nav-logo">
                         <a href="#">My Logo</a>
                     </div>
                     <div class="desktop-tools">
-                        <ul class="flex">
-                            <li>
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <nav class="content">
 
-                    <nav class="nav-link">
-                        <div class="nav-menu">
-                            <div  class="ambuger-menu">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
+                            <ul class="navnav-menu">
+                            <li class="navnav-item">
+                                <a href="#" class="link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">Contact</a>
+                            </ul>  
+                            </li>
+                        </nav>
+                    </div>
+                            <div  class="hamburger">
+                                <span class="barbar"></span>
+                                <span class="barbar"></span>
+                                <span class="barbar"></span>
                             </div>
                         </div>
-                    </nav>
+        
                 </div>
             </header>
             <main>
@@ -307,33 +307,73 @@
                         to help with it.
                     </p>
                 </div>
-                <div class="contact-me-form">
-                    <form class="form" action="https://formspree.io/f/mvoyejav" method="post">
-                        <div class="username-input">
-                            <label hidden id="mylabel" for="username">Username</label>
-                            <input type="text" name="username" class="input" placeholder="enter username" maxlength="30"
-                                required />
+                <div 
+                    class="contact-me-form">
+                    <form class="form" 
+                    action="https://formspree.io/f/mvoyejav" 
+                    id="form"
+                    method="post"
+                    onsubmit="event.preventDefault(); validateForm()">
+
+                        <div 
+                        class="username-input">
+                         <label hidden 
+                            id="mylabel" 
+                            for="name">Name</label>
+                            <input 
+                            type="text" 
+                            name="name" 
+                            class="input" 
+                            id="name"
+                            placeholder="name" 
+                            maxlength="30"
+                            required />
+                            <small class="error"></small>
                         </div>
                         <br />
                         <div class="email-input">
-                            <label hidden id="mylabel" for="email">Email</label>
-                            <input type="email" name="email" class="input" placeholder="enter email" size="64"
-                                maxlength="64" required />
+                            <label 
+                            hidden 
+                            id="mylabel" 
+                            for="email">
+                            Email
+                        </label>
+                            <input 
+                            type="email" 
+                            name="email" 
+                            class="input" 
+                            id="email"
+                            placeholder="enter email" 
+                            size="64"
+                            maxlength="64" 
+                            required />
+                            <small class="error"></small>
                         </div>
                         <br />
-                        <div class="text-area">
-                            <label hidden id="mylabel" for="message">Message</label>
-                            <textarea name="message" type="text" class="input-textarea" cols="30" maxlength="500"
-                                placeholder="enter your message here" required></textarea>
+                        <div 
+                         class="text-area">
+                        <label hidden id="message" 
+                            for="message">
+                            Message
+                        </label>
+                        <textarea 
+                            name="message" 
+                            type="text" 
+                            class="input-textarea" 
+                            id="message"
+                            cols="30" maxlength="500"
+                            placeholder="messages">
+                        </textarea>
+                        <small class="error"></small>
                         </div>
-                        <button type="submit" value="Get In Touch" class="submit-button">
+                        <button  type="submit" value="Send Message" class="submit-button">
                             Get In Touch
                         </button>
+                        <p id="success"></p>
                     </form>
                 </div>
             </div>
         </section>
-        <script src="script.js"></script>
+      <script src="script.js"></script>
     </body>
-
 </html>
