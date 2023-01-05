@@ -111,6 +111,10 @@ h2 {
   flex: none;
 }
 
+li {
+  list-style: none;
+}
+
 .list-items {
   display: flex;
   gap: 10px;
@@ -408,16 +412,7 @@ span {
   margin-bottom: 30px;
 }
 
-
-li {
-  list-style: none;
-}
-
-a {
-  color: #fff;
-}
-
-.navnav-bar{
+.navnav-bar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -426,7 +421,7 @@ a {
 }
 
 .navnav-menu {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
@@ -456,7 +451,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color:  #6070ff;
+  background-color: #6070ff;
 }
 
 .desktop-tools {
@@ -464,9 +459,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
-
-  .hamburger{
+  .hamburger {
     display: block;
   }
 
