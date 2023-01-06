@@ -113,6 +113,7 @@ h2 {
 
 li {
   list-style: none;
+  text-decoration: #dfe1e6;
 }
 
 .list-items {
@@ -430,6 +431,12 @@ span {
   color: #142cff;
 }
 
+link {
+  margin: 16px 0;
+  justify-self: start;
+  color: red;
+}
+
 .barbar {
   display: block;
   width: 25px;
@@ -456,6 +463,14 @@ span {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.navnav-item li {
+  margin: 10px 0;
+}
+
+.navnav-menu ul {
+  height: 69;
+}
+
 .navnav-menu {
   display: none;
 }
@@ -468,17 +483,22 @@ span {
   display: block;
   position: fixed;
   left: 0;
-  top: 70px;
-  gap: 0;
+  top: -1%;
+  gap: 100%;
   flex-direction: column;
-  background-color: #0018f5;
+  background: #0018f5;
   width: 100%;
   text-align: center;
   transition: 0.3s;
   height: 100%;
   padding: 50px;
   align-items: center;
-  justify-content: space-between;
+  margin: 0;
+  align-self: auto;
+  padding-top: 10%;
+  line-height: 65px;
+  text-align: start;
+  text-decoration: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -506,6 +526,7 @@ span {
 
   .navnav-menu.active {
     left: -100%;
+    margin: 16px 0;
   }
 
   .major-container {
@@ -542,6 +563,8 @@ span {
   a {
     padding-right: 10px;
     height: 0%;
+    margin: 16px;
+    color: #000;
   }
 
   .project-container {
