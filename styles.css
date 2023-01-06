@@ -18,7 +18,7 @@ header {
   background-color: #fff;
 }
 
-.hamburger {
+.amburger {
   display: flex;
   flex-direction: column;
 }
@@ -430,11 +430,6 @@ span {
   color: #142cff;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
 .barbar {
   display: block;
   width: 25px;
@@ -465,7 +460,6 @@ span {
   display: none;
 }
 
-
 .desk-menu {
   display: none;
 }
@@ -486,24 +480,23 @@ span {
   color: #fff;
 }
 
-
 @media screen and (min-width: 768px) {
-.hamburger {
-  display: none;
-}
+  .hamburger {
+    display: none;
+  }
 
-.desk-menu {
-  display: flex;
-  justify-content: space-between;
-}
+  .desk-menu {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.desktop-tools {
-  display: inline;
-}
+  .desktop-tools {
+    display: inline;
+  }
 
-.navnav-menu {
-  display: none;
-}
+  .navnav-menu {
+    display: none;
+  }
 
   .navnav-item {
     margin: 16px 0;
@@ -541,7 +534,6 @@ span {
   .nav-container {
     padding: 10px 40px;
   }
-
 
   .display-tools,
   li,
