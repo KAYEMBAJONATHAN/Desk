@@ -469,7 +469,7 @@ span {
   position: fixed;
   left: 0;
   top: 70px;
-  gap: 10px;
+  gap: 0;
   flex-direction: column;
   background-color: #0018f5;
   width: 100%;
@@ -477,7 +477,7 @@ span {
   transition: 0.3s;
   height: 100%;
   padding: 50px;
-  color: #fff;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
