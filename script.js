@@ -36,11 +36,7 @@ const errorNodes = document.querySelectorAll('.error')
     errorFlages = true;
   }
 
-  if(message.value.length < 1) {
-    errorNodes[2].innerText = 'Please enter message';
-    message.classList.add('error-border')
-    errorFlages = true;
-  }
+  
 
   if(!errorFlages) {
     success.innerText = 'success!'
@@ -58,6 +54,7 @@ function clearMesaages () {
 }
 
 function emailIsValid(email) {
-  let pattern = /\s+@\s+\.\s+/;
+  let pattern = '/\s+@\s+\.\s+/';
   return pattern.test(email);
 }
+

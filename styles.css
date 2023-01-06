@@ -18,7 +18,7 @@ header {
   background-color: #fff;
 }
 
-.amburger {
+.hamburger {
   display: flex;
   flex-direction: column;
 }
@@ -148,10 +148,6 @@ a {
   transform: rotate(91deg);
 }
 
-.content {
-  display: flex;
-}
-
 .column {
   flex-direction: column;
 }
@@ -165,6 +161,7 @@ a {
 }
 
 .project-card {
+  display: flex;
   flex-direction: column;
   gap: 24px;
   border: 1px solid #dfe1e6;
@@ -200,6 +197,7 @@ p.bold {
   font-size: 13px;
   color: #4d5866;
   padding: 8px 0;
+  display: flex;
 }
 
 .round {
@@ -420,13 +418,6 @@ span {
   padding: 0 24px;
 }
 
-.navnav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
 .nav-branding {
   font-size: 2rem;
 }
@@ -454,45 +445,72 @@ span {
   background-color: #6070ff;
 }
 
-.desktop-tools {
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .barbar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .barbar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .barbar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navnav-menu {
   display: none;
 }
 
+
+.desk-menu {
+  display: none;
+}
+
+.navnav-menu.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #0018f5;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+}
+
+
 @media screen and (min-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+.hamburger {
+  display: none;
+}
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.desk-menu {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.desktop-tools {
+  display: inline;
+}
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .navnav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #0018f5;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
+.navnav-menu {
+  display: none;
+}
 
   .navnav-item {
     margin: 16px 0;
   }
 
   .navnav-menu.active {
-    left: 0;
+    left: -100%;
   }
 
   .major-container {
@@ -524,9 +542,6 @@ span {
     padding: 10px 40px;
   }
 
-  .desktop-tools {
-    display: inline;
-  }
 
   .display-tools,
   li,
