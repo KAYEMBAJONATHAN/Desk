@@ -488,6 +488,7 @@ span {
   .desk-menu {
     display: flex;
     justify-content: space-between;
+    gap: 0;
   }
 
   .desktop-tools {
