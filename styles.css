@@ -131,7 +131,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.933);
 }
 
 .nav-logo a {
@@ -431,12 +431,6 @@ span {
   color: #142cff;
 }
 
-link {
-  margin: 16px 0;
-  justify-self: start;
-  color: red;
-}
-
 .barbar {
   display: block;
   width: 25px;
@@ -484,9 +478,8 @@ link {
   position: fixed;
   left: 0;
   top: -1%;
-  gap: 100%;
   flex-direction: column;
-  background: #0018f5;
+  background: #6070e0;
   width: 100%;
   transition: 0.3s;
   height: 100%;
@@ -497,7 +490,8 @@ link {
   padding-top: 10%;
   line-height: 65px;
   text-align: start;
-  text-decoration: #fff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
 }
 
 @media screen and (min-width: 768px) {
