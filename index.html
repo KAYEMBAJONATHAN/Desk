@@ -316,7 +316,7 @@
                 </p>
             </div>
             <div class="contact-me-form">
-                <form class="form" action="https://formspree.io/f/mvoyejav" method="post" onsubmit="return validateEmail()">
+                <form class="form" action="https://formspree.io/f/mvoyejav" method="post" id="form">
 
                     <div class="name-input">
                         <label hidden id="mylabel" for="name">Name</label>
@@ -343,11 +343,11 @@
                         </textarea>
 
                     </div>
-                    <button  type="submit" value=" Get In Touch" class="submit-button">
+                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">
                         Get In Touch
                     </button>
-
-                </form>
+                        <div class="error-message-div"></div>
+                </form> 
             </div>
         </div>
     </section>

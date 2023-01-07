@@ -13,21 +13,29 @@ document.querySelectorAll('navnav-link').forEach(n =>
   hamburger.classList.remove('active')
  }))
 
- const formContact = document.getElementById('form');
+const form = document.querySelector('.form');
+const submit = document.getElementById('get-in-touch-button');
 
-function validateEmail () {
- const email = document.getElementById('email').value;
- const error = document.getElementById('errorMessage');
- if(email.toLowerCase() !== email) {
-  error.innerHTML = 'Please enter your email in lowercase';
-  error.style.display = 'block';
-  error.style.color = '#FFF';
-  error.style.fontSize = 'larger';
-   return false;
- }
+function checkUppercase(event) {
+  const email = document.getElementById('email').value;
+  const erroMessagediv = document.querySelector('.error-message-div');
 
- document.getElementById('errorMessage').innerHTML = '';
- return true;
+  if(erroMessagediv.querySelector('p') !== null) {
+    const paragraph = erroMessagediv.querySelector('p');
+    erroMessagediv.removeChild(paragraph);
+    erroMessagediv.getElementsByClassName.display = 'none';
+    submit.style.marginTop = '40px';
+  }
+
+  if(email.toLowerCase() !== email) {
+    const errorMessage = 'Please make sure that your emails do not contain any upper case caracters';
+    erroMessagediv.appendChild(document.createElement('p')).innerHTML = errorMessage;
+
+    erroMessagediv.style.display = 'flex';
+    submit.style.marginTop = '70px';
+    event.preventDefault();
+  }
+  return true;
 }
 
-formContact.addEventListener('submit', validateEmail)
+form.addEventListener('submit', checkUppercase)
