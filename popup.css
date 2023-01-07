@@ -12,6 +12,8 @@
 .image-project {
     height: 80%;
     width: 100%;
+    justify-content: center;
+    
 }
 
 .model_header {

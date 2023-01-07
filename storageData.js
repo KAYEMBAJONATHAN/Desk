@@ -14,7 +14,7 @@ if (userInfo) {
     textAreaBoxInput.value = userInfo.textAreaBox;
 }
 
-
+localStorage.setItem('userInfo', JSON.stringify(userInfo));
 
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
