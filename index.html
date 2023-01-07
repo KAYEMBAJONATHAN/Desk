@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="storageData.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Jonathan's Portfolio</title>
 </head>
 
@@ -307,51 +308,31 @@
     <section class="contact-form">
         <div class="contact-card">
             <div class="contact-me">
-                <h2>contact me</h2>
+                <h2>Contact me</h2>
 
                 <p>
-                    if you have an application you are interested in developing, a
+                    If you have an application you are interested in developing, a
                     features that you need built or a project that need coding. I'd love
                     to help with it.
                 </p>
             </div>
             <div class="contact-me-form">
                 <form class="form" action="https://formspree.io/f/mvoyejav" method="post" id="form">
-
-                    <div class="name-input">
-                        <label hidden id="mylabel" for="name">Name</label>
-                        <input type="text" name="name" class="input"  placeholder="name" maxlength="30"
-                            required />
-                         
-                    </div>
-                    <br />
-                    <div class="email-input">
-                        <label hidden id="mylabel" for="email">
-                            Email
-                        </label>
-                        <input type="email" name="email" class="input" id="email" placeholder="enter email" size="64"
-                            maxlength="64" required />
-
-                    </div>
-                    <br />
-                    <div class="text-area">
-                        <label hidden id="message" for="message">
-                            Message
-                        </label>
-                        <textarea name="message" type="text" class="input-textarea" id="error-message" cols="30"
-                            maxlength="500" placeholder="messages" required>
-                        </textarea>
-
-                    </div>
-                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">
-                        Get In Touch
-                    </button>
-                        <div class="error-message-div"></div>
+                    <label hidden  for="name">Name</label>
+                    <input type="text" name="name" class="input name-input" id="username" placeholder="name" maxlength="30" required />
+                    <label hidden id="mylabel" for="email">Email</label>
+                    <input type="email" name="email" class="input mail-input" id="email" placeholder="enter email" size="64"
+                        maxlength="64" required />
+                    <label hidden id="message" for="message">Message</label>
+                    <textarea name="message" type="text" class="input-textarea text-area" id="error-message" cols="30"
+                        maxlength="500" placeholder="messages" required>
+                    </textarea>
+                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">Get In Touch</button>
                 </form> 
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    
 </body>
 
 </html>

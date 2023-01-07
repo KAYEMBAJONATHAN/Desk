@@ -227,6 +227,7 @@ ul {
   background-color: #ebebff;
   font-size: 12px;
   color: #0018f5;
+  width: 30%;
 }
 
 button {
@@ -360,7 +361,6 @@ span {
   color: #ebebff;
   margin: 15px;
   padding: 10;
-  background-color: #1a30ff;
 }
 
 .contact-me-form {
@@ -382,6 +382,7 @@ span {
   line-height: 20px;
   color: #172b4d;
   padding: 15px 38px 15px 16px;
+  margin-bottom: 20px;
 }
 
 .input-textarea {
