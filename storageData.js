@@ -14,7 +14,7 @@ if (userInfo) {
     textAreaBoxInput.value = userInfo.textAreaBox;
 }
 
-localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
 
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -28,7 +28,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
         email: email,
         textAreaBox: textAreaBox
     };
-
-    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+     
+    localStorage.setItem('userInfo', JSON.stringify(userInfo))
 
 });
