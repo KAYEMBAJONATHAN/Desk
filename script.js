@@ -30,4 +30,4 @@ function validateEmail () {
  return true;
 }
 
-formContact.addEventListener('submit', validateEmail);
+formContact.addEventListener('submit', validateEmail)
