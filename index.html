@@ -316,20 +316,20 @@
                 </p>
             </div>
             <div class="contact-me-form">
-                <form class="form" action="https://formspree.io/f/mvoyejav" id="form" method="post">
+                <form class="form" action="https://formspree.io/f/mvoyejav" method="post" id="form">
 
-                    <div class="username-input">
+                    <div class="name-input">
                         <label hidden id="mylabel" for="name">Name</label>
-                        <input type="text" name="name" class="input" id="name" placeholder="name" maxlength="30"
+                        <input type="text" name="name" class="input"  placeholder="name" maxlength="30"
                             required />
-
+                         
                     </div>
                     <br />
                     <div class="email-input">
                         <label hidden id="mylabel" for="email">
                             Email
                         </label>
-                        <input type="text" name="email" class="input" id="email" placeholder="enter email" size="64"
+                        <input type="email" name="email" class="input" id="email" placeholder="enter email" size="64"
                             maxlength="64" required />
 
                     </div>
@@ -338,16 +338,16 @@
                         <label hidden id="message" for="message">
                             Message
                         </label>
-                        <textarea name="message" type="text" class="input-textarea" id="message" cols="30"
+                        <textarea name="message" type="text" class="input-textarea" id="error-message" cols="30"
                             maxlength="500" placeholder="messages" required>
                         </textarea>
 
                     </div>
-                    <button onclick="validate()" type="submit" value="Send Message" class="submit-button">
+                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">
                         Get In Touch
                     </button>
-
-                </form>
+                        <div class="error-message-div"></div>
+                </form> 
             </div>
         </div>
     </section>
