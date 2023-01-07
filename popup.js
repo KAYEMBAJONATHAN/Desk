@@ -145,11 +145,11 @@ function desktop(index) {
 
 
 
-document.addEventListener('click', (event) => {
-    if (event.target.id === 'close-popUp') {
-        desktopProjectPopupScript.style.display = 'none';
-    }
-  });
+// document.addEventListener('click', (event) => {
+//     if (event.target.id === 'close-popUp') {
+//         desktopProjectPopupScript.style.display = 'none';
+//     }
+//   });
 
 
 const desktopHamburgerXPopupScript = document.querySelector(".desktop-close-button-of-popup");
