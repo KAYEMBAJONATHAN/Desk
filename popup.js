@@ -1,1 +1,1 @@
-hey
+const hey = ('hey')
