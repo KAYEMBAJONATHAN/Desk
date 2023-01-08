@@ -1,0 +1,60 @@
+.modal-section {
+  border: 2px solid greenyellow;
+}
+
+.desktop-project-pop-up {
+  display: none;
+  left: 0;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #888;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.modal-pop-pop {
+  display: flex;
+  left: 10%;
+  border-radius: 20px;
+  z-index: 15;
+  right: 0;
+  top: 5%;
+  bottom: 0;
+  background: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 85vw;
+}
+
+.image-project {
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+}
+
+.model_header {
+  display: flex;
+  justify-content: space-between;
+  color: #344563;
+}
+
+.info_list {
+  display: flex;
+}
+
+.project-meta {
+  display: flex;
+}
+
+.project-skills {
+  display: flex;
+}
+
+.project-skills li {
+  width: 16%;
+  text-align: center;
+}

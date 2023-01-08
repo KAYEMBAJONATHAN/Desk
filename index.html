@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="popup.css">
     <title>Jonathan's Portfolio</title>
 </head>
 
@@ -98,6 +98,9 @@
             </div>
         </section>
     </main>
+    
+
+    </div>
     </div>
     <section class="project-section">
         <div class="project-container">
@@ -125,7 +128,7 @@
                             <li>javascript</li>
                         </ul>
                     </div>
-                    <button>See Project</button>
+                    <button class="see-project-btn">See Project</button>
                 </div>
             </div>
 
@@ -153,7 +156,7 @@
                             <li>javascript</li>
                         </ul>
                     </div>
-                    <button>See Project</button>
+                    <button class="see-project-btn">See Project</button>
                 </div>
             </div>
 
@@ -181,7 +184,7 @@
                             <li>javascript</li>
                         </ul>
                     </div>
-                    <button>See Project</button>
+                    <button class="see-project-btn">See Project</button>
                 </div>
             </div>
 
@@ -209,11 +212,49 @@
                             <li>javascript</li>
                         </ul>
                     </div>
-                    <button>See Project</button>
+                    <button class="see-project-btn">See Project</button>
                 </div>
             </div>
         </div>
     </section>
+
+<section class="modal-section">
+    <div class="desktop-project-pop-up">
+            <div class = modal-pop-pop>
+            <div class="model_content" id="modelcontent"> 
+                <div class="model_header">
+                    <h2 class="project_title">Tonic</h2>
+                    <span class="crossBtn">&times;</span>
+                </div>
+                <ul class="info_list">
+                    <li class="item1">Canopy</li>
+                    <li class="item2"><span class="dot">&bull;</span><span>Back End Dev</span></li>
+                    <li class="item2"><span class="dot">&bull;</span><span>2015</span></li>
+                </ul>
+                <img class="img_project" src='assets/Snapshoot Portfolio.png' alt="project">
+                <p class="project_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with the relea</p>
+                
+                <ul class="tech_list">
+                    <li>javascript</li>
+                    <li class="margin_li">css</li>
+                    <li class="margin_li">javascript</li>
+                </ul>
+                
+                <img src="./img/border_line.png" alt="border line" class="button_line">
+                <div class="buttons">
+                    <a class="model_btn live" href=${array[index].live_version}>See live<img class="_icon" src="./img/Icon.svg" alt="live icon"></a>
+                    <a class="model_btn source" href=${array[index].source_link}>See project<img class="_icon" src="./img/Vector.svg" alt="github icon"></a>
+                </div>
+                </div> 
+            </div> 
+        </div>
+     </div>
+</section>
+
     <section id="about" class="about">
         <div class="about-container flex column">
             <div class="abt-me flex column">
@@ -307,51 +348,36 @@
     <section class="contact-form">
         <div class="contact-card">
             <div class="contact-me">
-                <h2>contact me</h2>
+                <h2>Contact me</h2>
 
                 <p>
-                    if you have an application you are interested in developing, a
+                    If you have an application you are interested in developing, a
                     features that you need built or a project that need coding. I'd love
                     to help with it.
                 </p>
             </div>
             <div class="contact-me-form">
                 <form class="form" action="https://formspree.io/f/mvoyejav" method="post" id="form">
-
-                    <div class="name-input">
-                        <label hidden id="mylabel" for="name">Name</label>
-                        <input type="text" name="name" class="input"  placeholder="name" maxlength="30"
-                            required />
-                         
-                    </div>
-                    <br />
-                    <div class="email-input">
-                        <label hidden id="mylabel" for="email">
-                            Email
-                        </label>
-                        <input type="email" name="email" class="input" id="email" placeholder="enter email" size="64"
-                            maxlength="64" required />
-
-                    </div>
-                    <br />
-                    <div class="text-area">
-                        <label hidden id="message" for="message">
-                            Message
-                        </label>
-                        <textarea name="message" type="text" class="input-textarea" id="error-message" cols="30"
-                            maxlength="500" placeholder="messages" required>
-                        </textarea>
-
-                    </div>
-                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">
-                        Get In Touch
-                    </button>
-                        <div class="error-message-div"></div>
+                    <label hidden  for="name">Name</label>
+                    <input type="text" name="name" class="input name-input" id="username" placeholder="name" maxlength="30" required />
+                    <label hidden id="mylabel" for="email">Email</label>
+                    <input type="email" name="email" class="input mail-input" id="email" placeholder="enter email" size="64"
+                        maxlength="64" required />
+                    <label hidden id="message" for="message">Message</label>
+                    <textarea name="message" class="input-textarea text-area" id="msg" cols="30"
+                        maxlength="500" placeholder="messages" required>
+                    </textarea>
+                    <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">Get In Touch</button>
                 </form> 
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    
+    <script src="storageData.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="form.js" defer></script>
+    <script src="popup.js"></script>
+
 </body>
 
 </html>
