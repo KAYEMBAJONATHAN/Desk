@@ -5,7 +5,7 @@ const desktopPopup = document.querySelector('.desktop-project-pop-up');
 const projectButtons = document.querySelectorAll('.see-project-btn');
 const btns = Array.from(projectButtons);
 // const overlay = document.getElementById('overlay');
-console.log(btns)
+desktopPopup.style.display = "none";
 
 
 
@@ -24,12 +24,12 @@ const array = [
       printer took a galley of type and scrambled it 1960s with the relea`,
       featured: ['CANOPY', 'Back End Dev', 2015],
       featureddesk: ['CANOPY', 'Back End Dev', 2015],
-      image: 'img/Snapshot Portfolio-1.png',
+      image: './assets/Snapshoot Portfolio.png',
       imageDesktop: 'img/nature.svg',
       technologies: ['html', 'css', 'javaScript'],
       technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails', 'github', 'ruby', 'Bootstraps'],
-      live_version: 'https://djo1975.github.io/Portfolio-finish-mobile-version/#/',
-      source_link: 'https://github.com/djo1975/Portfolio-finish-mobile-version',
+      live_version: 'https://kayembajonathan.github.io/Desk/',
+      source_link: 'https://github.com/KAYEMBAJONATHAN/Desk.git',
     },
     {
       id: '2',
@@ -45,12 +45,12 @@ const array = [
       printer took a galley of type and scrambled it 1960s with the relea`,
       featured: ['CANOPY', 'Back End Dev', 2015],
       featureddesk: ['FACEBOOK', 'Full Stack Dev', 2015],
-      image: 'img/portofolio-img-2.svg',
+      image: './assets/Snapshoot Portfolio-1.png',
       imageDesktop: 'img/stories-desk.svg',
       technologies: ['html', 'css', 'javaScript'],
       technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails', 'github', 'ruby', 'Bootstraps'],
-      live_version: 'https://djo1975.github.io/Portfolio-finish-mobile-version/#/',
-      source_link: 'https://github.com/djo1975/Portfolio-finish-mobile-version',
+      live_version: 'https://kayembajonathan.github.io/Desk/',
+      source_link: 'https://github.com/KAYEMBAJONATHAN/Desk.git',
     },
     {
       id: '3',
@@ -66,12 +66,12 @@ const array = [
       printer took a galley of type and scrambled it 1960s with the relea`,
       featured: ['CANOPY', 'Back End Dev', 2015],
       featureddesk: ['FACEBOOK', 'Full Stack Dev', 2015],
-      image: 'img/portofolio-img-3.svg',
+      image: './assets/Snapshoot Portfolio-2.png',
       imageDesktop: 'img/desk-one.svg',
       technologies: ['html', 'css', 'javaScript'],
       technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails', 'github', 'ruby', 'Bootstraps'],
-      live_version: 'https://djo1975.github.io/Portfolio-finish-mobile-version/#/',
-      source_link: 'https://github.com/djo1975/Portfolio-finish-mobile-version',
+      live_version: 'https://kayembajonathan.github.io/Desk/',
+      source_link: 'https://github.com/KAYEMBAJONATHAN/Desk.git',
     },
     {
       id: '4',
@@ -87,12 +87,12 @@ const array = [
       printer took a galley of type and scrambled it 1960s with the relea`,
       featured: ['CANOPY', 'Back End Dev', 2015],
       featureddesk: ['UBER', 'Lead Developer', 2018],
-      image: 'img/portofolio-img-4.svg',
+      image: './assets/Snapshoot Portfolio-3.png',
       imageDesktop: 'img/uber-desk.svg',
       technologies: ['html', 'css', 'javaScript'],
       technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails', 'github', 'ruby', 'Bootstraps'],
-      live_version: 'https://djo1975.github.io/Portfolio-finish-mobile-version/#/',
-      source_link: 'https://github.com/djo1975/Portfolio-finish-mobile-version',
+      live_version: 'https://kayembajonathan.github.io/Desk/',
+      source_link: 'https://github.com/KAYEMBAJONATHAN/Desk.git',
     },
   ];
 
@@ -102,10 +102,10 @@ function desktop(index) {
     // overlay.classList.add('active')
     desktopPopup.style.display = 'flex';
     // developerName.style.color = '#3e3c3c';
-    desktopPopup.innerHTML = `
+    desktopPopup.innerHTML += `
         <div class="model_content" id="modelcontent">
             <div class="model_header">
-                <h2 class="project_title">${array[index].name}</h2>
+                <h2 class="project_title">Name: ${array[index].name}</h2>
                 <span onclick="closeModal()" class="crossBtn">&times;</span>
             </div>
             <ul class="info_list">
@@ -114,8 +114,7 @@ function desktop(index) {
                 <li class="item2"><span class="dot">&bull;</span><span>${array[index].featured[2]}</span></li>
             </ul>
             <img class="img_project" src=${array[index].image} alt="project">
-            <img class="img_desktop" src=${array[index].imageDesktop} alt="project desktop screenshot">
-            <p class="project_description">${array[index].longDescription}</p>
+            <p class="project_description">${array[index].longDescriptiondesk}</p>
             
             <ul class="tech_list">
                 <li>${array[index].technologies[0]}</li>
@@ -124,7 +123,7 @@ function desktop(index) {
             </ul>
             <div class="boxxx"><p class="project_descriptiondesk">${array[index].longDescriptiondesk}</p>
             <ul class="tech_listdesk">
-                <li>${array[i].technologiesdesk[0]}</li>
+                <li>${array[index].technologiesdesk[0]}</li>
                 <li class="margin_li">${array[index].technologiesdesk[1]}</li>
                 <li class="margin_li">${array[index].technologiesdesk[2]}</li></ul>
                 <ul class="tech_listdesk1">
@@ -134,7 +133,7 @@ function desktop(index) {
             </ul>
             <img src="./img/border_line.png" alt="border line" class="button_line">
             <div class="buttons">
-                <a class="model_btn live" href=${array[index].live_version}>See live<img class="_icon" src="./img/Icon.svg" alt="live icon"></a>
+                <a class="model_btn live" href=${array[index].live_version}>See live<img class="_icon" src="./assets/html circle.svg" alt="live icon"></a>
                 <a class="model_btn source" href=${array[index].source_link}>See project<img class="_icon" src="./img/Vector.svg" alt="github icon"></a>
             </div>
             </div>
@@ -142,7 +141,11 @@ function desktop(index) {
 }
 
 
-
+btns.forEach((btn,index) => {
+  btn.addEventListener("click", () => {
+    desktop(index);
+  })
+});
 
 
 // document.addEventListener('click', (event) => {
@@ -166,17 +169,22 @@ mobileModalView.addEventListener("click", () => {
     overlay.classList.remove('active')
     developerName.style.color = 'white';
   
-})
+});
 
-for (let i = 0; i < btns.length; i += 1) {
-    // newBtnArray[i].addEventListener('click', () => {
-    //   mobile(i);
-    //   main.style.backdropFilter = blur();
-    // });
-    btns[i].addEventListener('click', () => {
-      desktop(i);
-    });
-  }
+
+
+// for (let i = 0; i < btns.length; i += 1) {
+//     // newBtnArray[i].addEventListener('click', () => {
+//     //   mobile(i);
+//     //   main.style.backdropFilter = blur();
+//     // });
+//     btns[i].addEventListener('click', () => {
+//       alert("number: " + i);
+//       desktop(i);
+//     });
+//   }
+
+
 
 
 

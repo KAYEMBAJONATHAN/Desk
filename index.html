@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="popup.css">
-    <script src="storageData.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="form.js" defer></script>
-    <script src="popup.js"></script>
     <title>Jonathan's Portfolio</title>
 </head>
 
@@ -221,43 +217,49 @@
             </div>
         </div>
     </section>
+
+<section class="modal-section">
     <div class="desktop-project-pop-up">
-        <div class="model_content" id="modelcontent">
-            <div class="model_header">
-                <h2 class="project_title">Tonic</h2>
-                <span class="crossBtn">&times;</span>
-            </div>
-            <ul class="info_list">
-                <li class="item1">Canopy</li>
-                <li class="item2"><span class="dot">&bull;</span><span>Back End Dev</span></li>
-                <li class="item2"><span class="dot">&bull;</span><span>2015</span></li>
-            </ul>
-            <img class="img_project" src='assets/Snapshoot Portfolio.png' alt="project">
-            <p class="project_description">${array[index].longDescription}</p>
-            
-            <ul class="tech_list">
-                <li>${array[index].technologies[0]}</li>
-                <li class="margin_li">${array[index].technologies[1]}</li>
-                <li class="margin_li">${array[index].technologies[2]}</li>
-            </ul>
-            <div class="boxxx"><p class="project_descriptiondesk">${array[index].longDescriptiondesk}</p>
-            <ul class="tech_listdesk">
-                <li>${array[i].technologiesdesk[0]}</li>
-                <li class="margin_li">${array[index].technologiesdesk[1]}</li>
-                <li class="margin_li">${array[index].technologiesdesk[2]}</li></ul>
-                <ul class="tech_listdesk1">
-                <li class="margin_li">${array[index].technologiesdesk[4]}</li>
-                <li class="margin_li">${array[index].technologiesdesk[5]}</li>
-                <li class="margin_li">${array[index].technologiesdesk[6]}</li>
-            </ul>
-            <img src="./img/border_line.png" alt="border line" class="button_line">
-            <div class="buttons">
-                <a class="model_btn live" href=${array[index].live_version}>See live<img class="_icon" src="./img/Icon.svg" alt="live icon"></a>
-                <a class="model_btn source" href=${array[index].source_link}>See project<img class="_icon" src="./img/Vector.svg" alt="github icon"></a>
-            </div>
-            </div>
+            <div class = modal-pop-pop>
+            <div class="model_content" id="modelcontent"> 
+                <div class="model_header">
+                    <h2 class="project_title">Tonic</h2>
+                    <span class="crossBtn">&times;</span>
+                </div>
+                <ul class="info_list">
+                    <li class="item1">Canopy</li>
+                    <li class="item2"><span class="dot">&bull;</span><span>Back End Dev</span></li>
+                    <li class="item2"><span class="dot">&bull;</span><span>2015</span></li>
+                </ul>
+                <img class="img_project" src='assets/Snapshoot Portfolio.png' alt="project">
+                <p class="project_description">${array[index].longDescription}</p>
+                
+                <ul class="tech_list">
+                    <li>${array[index].technologies[0]}</li>
+                    <li class="margin_li">${array[index].technologies[1]}</li>
+                    <li class="margin_li">${array[index].technologies[2]}</li>
+                </ul>
+                <div class="boxxx"><p class="project_descriptiondesk">${array[index].longDescriptiondesk}</p>
+                <ul class="tech_listdesk">
+                    <li>${array[i].technologiesdesk[0]}</li>
+                    <li class="margin_li">${array[index].technologiesdesk[1]}</li>
+                    <li class="margin_li">${array[index].technologiesdesk[2]}</li></ul>
+                    <ul class="tech_listdesk1">
+                    <li class="margin_li">${array[index].technologiesdesk[4]}</li>
+                    <li class="margin_li">${array[index].technologiesdesk[5]}</li>
+                    <li class="margin_li">${array[index].technologiesdesk[6]}</li>
+                </ul>
+                <img src="./img/border_line.png" alt="border line" class="button_line">
+                <div class="buttons">
+                    <a class="model_btn live" href=${array[index].live_version}>See live<img class="_icon" src="./img/Icon.svg" alt="live icon"></a>
+                    <a class="model_btn source" href=${array[index].source_link}>See project<img class="_icon" src="./img/Vector.svg" alt="github icon"></a>
+                </div>
+                </div> 
+            </div> 
         </div>
-    </div>
+     </div>
+</section>
+
     <section id="about" class="about">
         <div class="about-container flex column">
             <div class="abt-me flex column">
@@ -367,7 +369,7 @@
                     <input type="email" name="email" class="input mail-input" id="email" placeholder="enter email" size="64"
                         maxlength="64" required />
                     <label hidden id="message" for="message">Message</label>
-                    <textarea name="message" type="text" class="input-textarea text-area" id="error-message" cols="30"
+                    <textarea name="message" class="input-textarea text-area" id="msg" cols="30"
                         maxlength="500" placeholder="messages" required>
                     </textarea>
                     <button  type="submit" id="get-in-touch-button" class="submit-button" name="submit_button">Get In Touch</button>
@@ -376,6 +378,11 @@
         </div>
     </section>
     
+    <script src="storageData.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="form.js" defer></script>
+    <script src="popup.js"></script>
+
 </body>
 
 </html>

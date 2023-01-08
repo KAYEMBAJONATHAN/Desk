@@ -269,7 +269,6 @@ button:active {
 
 ul.list-items.skill-items {
   margin-top: 12px;
-  gap: 24px;
 }
 
 .language {
@@ -608,6 +607,7 @@ span {
   }
 
   .lang-div {
+    display: flex;
     flex-direction: row;
     padding: 5px 15px;
   }
