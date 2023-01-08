@@ -1,45 +1,22 @@
-/* .desktop-project-pop-up {
-  display: flex;
-  width: 80%;
-  height: 70%;
-  z-index: 10;
-  margin-left: 10%;
-  left: 10%;
-  border-radius: 20px;
-  left: 0;
- right: 0;
- top: 0;
- bottom: 0;
- background: #C1C7D0;
- mix-blend-mode: multiply;
- padding-left: 10%;
- padding-right: 10%;
- position: fixed;
-}  */
-
 .modal-section {
-    border: 2px solid greenyellow;
-   }
+  border: 2px solid greenyellow;
+}
 
 .desktop-project-pop-up {
-    display: flex;
-    left: 10%;
-    border-radius: 20px;
-    /* border: red 4px solid; */
-    z-index: 10;
-    left: 7%;
-    right: 0;
-    top: 5%;
-    bottom: 0;
-    background: white;
-    /* background: rgb(0, 0, 0, 0.5); */
-    padding-left: 10%;
-    padding-right: 10%;
-    position: fixed;
-    height: 90vh;
-    width: 85vw;
-
-  } 
+  display: flex;
+  left: 10%;
+  border-radius: 20px;
+  z-index: 10;
+  right: 0;
+  top: 5%;
+  bottom: 0;
+  background: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: fixed;
+  height: 90vh;
+  width: 85vw;
+}
 
 .image-project {
   height: 80%;
@@ -58,15 +35,14 @@
 }
 
 .project-meta {
-    display: flex;
+  display: flex;
 }
 
 .project-skills {
-    display: flex;
+  display: flex;
 }
 
 .project-skills li {
-    width: 16%;
-    text-align: center;
+  width: 16%;
+  text-align: center;
 }
-
