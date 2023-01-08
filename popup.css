@@ -3,20 +3,32 @@
 }
 
 .desktop-project-pop-up {
+  display: none;
+  left: 0;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #888;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.modal-pop-pop {
   display: flex;
   left: 10%;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 15;
   right: 0;
   top: 5%;
   bottom: 0;
   background: white;
   padding-left: 10%;
   padding-right: 10%;
-  position: fixed;
-  height: 90vh;
   width: 85vw;
-}
+} 
 
 .image-project {
   height: 80%;

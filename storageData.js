@@ -3,7 +3,6 @@ const emailInput = document.getElementById('email');
 const textAreaBoxInput = document.getElementById('msg');
 const formStorage = document.getElementById('form')
 
-// Parsing string from local storage
 let userInfo = JSON.parse(localStorage.getItem('userInfo'))
 console.log(userInfo);
 
